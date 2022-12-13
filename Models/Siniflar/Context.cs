@@ -7,7 +7,7 @@ namespace KisiselWebSayfasi.Models.Siniflar
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-CK4MQ1B\\SQLEXPRESS;database=KisiselWebSayfasiDb; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-CK4MQ1B\\SQLEXPRESS;database=KisiselWebSayfasiDb; integrated security=true;TrustServerCertificate=True;");
         }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<AnaSayfa> AnaSayfas { get; set; }

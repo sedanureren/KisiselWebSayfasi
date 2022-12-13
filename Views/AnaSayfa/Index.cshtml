@@ -1,4 +1,6 @@
-﻿@{
+﻿@using KisiselWebSayfasi.Models.Siniflar
+@model List<AnaSayfa>
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -17,15 +19,18 @@
             <img src="~/img/cicek.png">
         </div>
         <div class="content">
-            <h1>Seda Nur EREN</h1>
-            <h2>Bilgisayar Mühendisliği Öğrencisi</h2>
-            <p>sldflsdfşksdşfksşdfşskdfşlsdşlfsdlş</p>
-            <h3>İletişim</h3>
+            @foreach (var x in Model)
+            {
+                <h1>@x.isim</h1>
+                <h2>@x.unvan</h2>
+                <p>@x.aciklama</p>
+                <h3>@x.iletisim</h3>
+                //@Html.ActionLink("Ikonlar","AnaSayfaController")
+            }
+
+             
         </div>
-        <div class="social">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+       
     </div>
 </body>
 </html> 

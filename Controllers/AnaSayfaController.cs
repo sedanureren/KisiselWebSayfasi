@@ -9,9 +9,16 @@ namespace KisiselWebSayfasi.Controllers
         Context c=new Context();
         public IActionResult Index()
         {
-            //var deger=c.AnaSayfas.ToList();
+            var deger=c.AnaSayfas.ToList();
 
-            return View();
+            return View(deger);
+        }
+        public PartialViewResult Ikonlar()
+        {
+            var deger=c.Ikonlars.ToList();
+            return PartialView(deger);
+
+
         }
     }
 }
