@@ -2,11 +2,11 @@
 
 namespace KisiselWebSayfasi.Models.Siniflar
 {
-    public class Ikonlar
+    public class Sehrim
     {
         [Key]
         public int Id { get; set; }
-        public string Ikon { get; set; }
-        public string Link { get; set; }
+        public string  FotoUrl { get; set; }
+        public string Aciklama { get; set; }
     }
 }

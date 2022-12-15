@@ -1,36 +1,41 @@
-﻿@using KisiselWebSayfasi.Models.Siniflar
-@model List<AnaSayfa>
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kişisel Web Sitesi</title>
-    <link rel="stylesheet" href="~/css/anasayfa.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
-    <div class="center">
-        <div class="avatar">
-            <img src="~/img/cicek.png">
-        </div>
-        <div class="content">
-            @foreach (var x in Model)
-            {
-                <h1>@x.isim</h1>
-                <h2>@x.unvan</h2>
-                <p>@x.aciklama</p>
-                <h3>@x.iletisim</h3>
-                //@Html.ActionLink("Ikonlar","AnaSayfaController")
-            }
+@using KisiselWebSayfasi.Models.Siniflar
+@model List<AnaSayfa>
 
-             
-        </div>
-       
-    </div>
+<!doctype html>
+<html lang="en">
+<body>
+    <section class="p-5 text-center hakkimizda">
+
+           <h2 class="mb-5 font-weight-bold">Hakkımda</h2>
+            <hr class="ayrac"><i class="far fa-star ibeyaz"></i>
+            <div class="center">
+                <div class="avatar">
+                    <img src="~/img/cicek.png">
+                </div>
+                <div class="content">
+                    @foreach (var x in Model)
+                    {
+                        <h1>@x.isim</h1>
+                        <h2>@x.unvan</h2>
+                        <p>@x.aciklama</p>
+                        <h3>@x.iletisim</h3>
+                        
+                    }
+
+                </div>
+
+            </div>
+        <br><br>
+        <a href="ozgecmis.html">Özgeçmişime buradan ulaşabilirsiniz.</a>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!--hakkımızda bitiş-->
 </body>
-</html> 
+</html>

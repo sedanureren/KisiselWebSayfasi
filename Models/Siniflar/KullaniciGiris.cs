@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿
+using System.ComponentModel.DataAnnotations;
 namespace KisiselWebSayfasi.Models.Siniflar
 {
-    public class Admin
+    public class KullaniciGiris
     {
         [Key]
         public int Id { get; set; }

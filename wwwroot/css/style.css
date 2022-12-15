@@ -112,7 +112,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 }
 
 
-}
+
 /*--footer--*/
 .footer-bottom{
 	background: url(../images/head_bg.jpg);
@@ -428,7 +428,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 }
 .right, .left {
     width: 100%;
-    text-align: -webkit-center;
+    text-align:-webkit-center;
 }
 .left {
     margin: 0 0px 20px 0;
