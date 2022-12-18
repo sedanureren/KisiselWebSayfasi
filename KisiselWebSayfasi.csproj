@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="web2\.vs\ProjectSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="web2\.vs\slnx.sqlite" />
+    <None Include="web2\.vs\web2\FileContentIndex\36b54f91-5b13-4360-9262-f42812e31cf4.vsidx" />
+    <None Include="web2\.vs\web2\FileContentIndex\read.lock" />
+    <None Include="wwwroot\css\Blog2.css" />
+    <None Include="wwwroot\css\bootstrap.css" />
     <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\img\avatar.png" />
+    <None Include="wwwroot\img\post1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +29,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="web2\.vs\web2\FileContentIndex\merges\" />
+    <Folder Include="web2\css\" />
   </ItemGroup>
 
 </Project>

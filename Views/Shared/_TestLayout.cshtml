@@ -38,7 +38,7 @@
                         <a class="nav-link" href="/Sehrim/Index/">Şehrim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="iletisim.html">Blog</a>
+                        <a class="nav-link" href="/Blog/Index/">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Oturum Aç</a>
@@ -49,10 +49,14 @@
 
                     </li>
                 </ul>
-            </div>
-        </div>
+           </div>
     </nav>
     <!--Menü Bitiş-->
     @RenderBody();
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - KisiselWebSayfasi - <a asp-area="" asp-controller="AnaSayfa" asp-action="Index">Privacy</a>
+        </div>
+     </footer>
 </body>
 </html>

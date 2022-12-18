@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KisiselWebSayfasi
 build_property.RootNamespace = KisiselWebSayfasi
@@ -29,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/AnaSayfa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hU2F5ZmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Blog/BlogDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nRGV0YXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Home/Index.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cYDXFRHHtxUgJgenGVOM/F986hL09RrA5UCVNHiMKYo=",
+  "Hash": "FK1i978r/4V4yxZpBbTGVkU7qG3XowscQkedsZDgzoM=",
   "Source": "KisiselWebSayfasi",
   "BasePath": "_content/KisiselWebSayfasi",
   "Mode": "Default",
@@ -85,6 +85,40 @@
       "OriginalItemSpec": "wwwroot\\css\\anasayfa.css"
     },
     {
+      "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\css\\Blog2.css",
+      "SourceId": "KisiselWebSayfasi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\",
+      "BasePath": "_content/KisiselWebSayfasi",
+      "RelativePath": "css/Blog2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Blog2.css"
+    },
+    {
+      "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "KisiselWebSayfasi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\",
+      "BasePath": "_content/KisiselWebSayfasi",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
+    },
+    {
       "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\css\\site.css",
       "SourceId": "KisiselWebSayfasi",
       "SourceType": "Discovered",
@@ -153,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\img\\admin.png"
     },
     {
+      "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\img\\avatar.png",
+      "SourceId": "KisiselWebSayfasi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\",
+      "BasePath": "_content/KisiselWebSayfasi",
+      "RelativePath": "img/avatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\avatar.png"
+    },
+    {
       "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\img\\cicek.png",
       "SourceId": "KisiselWebSayfasi",
       "SourceType": "Discovered",
@@ -168,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\cicek.png"
+    },
+    {
+      "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\img\\post1.jpg",
+      "SourceId": "KisiselWebSayfasi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\",
+      "BasePath": "_content/KisiselWebSayfasi",
+      "RelativePath": "img/post1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\post1.jpg"
     },
     {
       "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\img\\yesil.png",
