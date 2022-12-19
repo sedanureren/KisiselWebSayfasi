@@ -1,33 +1,31 @@
-﻿
+﻿@using KisiselWebSayfasi.Models.Siniflar
+@model List<Blog>
 @{
-    Layout=null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<h2>Blog Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <td>ID</td>
+        <td>BAŞLIK</td>
+        <td>Tarih</td>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdminPanelLogin</title>
-    <link rel="stylesheet" href="~/css/Admin.css">
-</head>
-<body>
-    <div class="container">
-        <div class="contact-form" >
-            <img src="~/img/admin.png"class="admin-img">
-            <h2>Admin Login</h2>
-            <form>
-                <div class="txtb">
-                    <input type="text" placeholder="Username">
-                </div>
-                <div class="txtb">
-                    <input type="password" placeholder="Password">
-                </div>
-                <input type="submit" class="logbtn" value="Login">
-            </form>
-        </div>
-    </div>
-    
-</body>
-</html>
+        <td>SİL</td>
+        <td>GÜNCELLE</td>
+    </tr>
+    @foreach(var x in Model)
+    {
+    <tr>
+       <td>@x.Id</td>
+       <td>@x.Baslik</td>
+       <td>@x.Tarih</td>
+       <td><a href="/Admin/BlogSil/@x.Id" class="btn btn-danger">Sil</a></td>
+       <td><a href="/Admin/BlogGetir/@x.Id" class="btn btn-warning">Güncelle</a></td>
+       <td><a href="#" class="btn btn-default">Detaylar</a></td>
+    </tr>
+    }
+</table>
+
+<a href="/Admin/YeniBlog" class="btn btn-primary">Yeni Blog</a>

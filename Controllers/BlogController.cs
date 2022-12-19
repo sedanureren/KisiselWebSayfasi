@@ -23,5 +23,20 @@ namespace KisiselWebSayfasi.Controllers
 			//   var blogbul=c.Bloglars.Where(x=>x.Id==id).ToList();
 			return View(blogYorum);
         }
+        [HttpGet]
+        public PartialViewResult YorumYap()
+        {
+            return PartialView();
+
+        }
+        [HttpPost]
+        public PartialViewResult YorumYap(Yorumlar yorum)
+        {
+            c.Yorumlars.Add(yorum);
+            c.SaveChanges();
+            return PartialView();
+
+        }
+       
     }
 }
