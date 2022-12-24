@@ -40,8 +40,8 @@
 					<p>
 						@x.Aciklama
 					</p>
-				</div>
-				<br /><br />
+					</div>
+					<br /><br />
 				}
 			</div>
 			<div class="col-md-4 side-content">
@@ -49,11 +49,11 @@
 					<h3>SON BLOGLAR</h3>
 					@foreach(var y in Model.Deger3){
 					<ul>
-						<li><a href="/Blog/BlogDeger/@y.Id">@y.Baslik</a></li>
+						<li><a href="/Blog/BlogDetay/@y.Id">@y.Baslik</a></li>
 					</ul>
 					}
 				</div>
-				<div class="comments">
+               <div class="comments">
 					<h3>SON YORUMLAR</h3>
 					<ul>
 						<li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
