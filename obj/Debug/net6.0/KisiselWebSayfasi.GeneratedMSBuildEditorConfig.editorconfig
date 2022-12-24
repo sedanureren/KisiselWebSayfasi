@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Moster\Desktop\turkcell\KisiselWebSayfasi\KisiselWebSayfasi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Admin/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Admin/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Admin/BlogGetir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmxvZ0dldGlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Blog/yorumBasarili.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1x5b3J1bUJhc2FyaWxpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Moster/Desktop/turkcell/KisiselWebSayfasi/KisiselWebSayfasi/Views/Blog/YorumYap.cshtml]

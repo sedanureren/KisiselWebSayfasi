@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KisiselWebSayfasi.Models.Siniflar;
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace KisiselWebSayfasi.Controllers
 {
@@ -7,7 +9,7 @@ namespace KisiselWebSayfasi.Controllers
     {
         Context c=new Context ();
 		BlogYorum blogYorum = new BlogYorum();
-
+        Yorumlar yorum=new Yorumlar ();
 		public IActionResult Index()
         {
             // var bloglar = c.Bloglars.ToList();
@@ -18,11 +20,12 @@ namespace KisiselWebSayfasi.Controllers
         }
 		public ActionResult BlogDetay(int id)
         {
-            blogYorum.Deger1 = c.Bloglars.Where(x => x.Id == id).ToList();
+            blogYorum.Deger1 = c.Bloglars.Where(x => x.Id == id).ToList();//LINQ
 			blogYorum.Deger2 = c.Yorumlars.Where(x => x.BlogId == id).ToList();
 			//   var blogbul=c.Bloglars.Where(x=>x.Id==id).ToList();
 			return View(blogYorum);
         }
+
         [HttpGet]
         public PartialViewResult YorumYap()
         {
@@ -30,13 +33,21 @@ namespace KisiselWebSayfasi.Controllers
 
         }
         [HttpPost]
-        public PartialViewResult YorumYap(Yorumlar yorum)
+        public PartialViewResult YorumYap(Yorumlar y)
         {
-            c.Yorumlars.Add(yorum);
-            c.SaveChanges();
-            return PartialView();
-
+				c.Yorumlars.Add(y);
+				c.SaveChanges();
+				return PartialView("yorumBasarili");
+			
         }
-       
-    }
+		public PartialViewResult yorumBasarili()
+		{
+			// Display the success page
+			return PartialView();
+		}
+
+
+
+
+	}
 }

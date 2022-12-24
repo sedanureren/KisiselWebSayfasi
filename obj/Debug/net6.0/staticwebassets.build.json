@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FK1i978r/4V4yxZpBbTGVkU7qG3XowscQkedsZDgzoM=",
+  "Hash": "Rv45bPhfhjWKdgiyp72MmHqRisXLJmY1d0AIcNUmFOQ=",
   "Source": "KisiselWebSayfasi",
   "BasePath": "_content/KisiselWebSayfasi",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Admin.css"
+    },
+    {
+      "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\css\\AdminLogin.css",
+      "SourceId": "KisiselWebSayfasi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\",
+      "BasePath": "_content/KisiselWebSayfasi",
+      "RelativePath": "css/AdminLogin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AdminLogin.css"
     },
     {
       "Identity": "C:\\Users\\Moster\\Desktop\\turkcell\\KisiselWebSayfasi\\KisiselWebSayfasi\\wwwroot\\css\\anasayfa.css",
