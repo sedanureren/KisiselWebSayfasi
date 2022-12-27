@@ -1,6 +1,5 @@
-﻿
-@{
-	Layout = null;
+﻿@{
+    Layout = null;
 }
 <!doctype html>
 <html lang="en">
@@ -41,15 +40,16 @@
                         <a class="nav-link" href="/Blog/Index/">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Oturum Aç</a>
-                        
+                        <a class="nav-link" href="/UserLogin/Login/">Oturum Aç</a>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Admin/AdminLogin/">Admin Giris</a>
 
                     </li>
                 </ul>
-           </div>
+            </div>
+            <partial name="_LoginPartial" />
     </nav>
     <!--Menü Bitiş-->
     @RenderBody();
@@ -57,6 +57,6 @@
         <div class="container">
             &copy; 2022 - KisiselWebSayfasi - <a asp-area="" asp-controller="AnaSayfa" asp-action="Index">Privacy</a>
         </div>
-     </footer>
+    </footer>
 </body>
 </html>

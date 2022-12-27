@@ -8,6 +8,7 @@ namespace KisiselWebSayfasi.Models.Siniflar
         [Key]
         public int Id { get; set; }
         public string KullaniciAdi { get; set; }
+        [EmailAddress]
         public string Mail { get; set; }
         public string Yorum { get; set; }
         public int BlogId { get; set; }

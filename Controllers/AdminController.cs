@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KisiselWebSayfasi.Models.Siniflar;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 
 namespace KisiselWebSayfasi.Controllers
 {
@@ -47,15 +48,15 @@ namespace KisiselWebSayfasi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-        public ActionResult AdminLogin(Admin admin)
-        {
-            var bilgiler = c.Admins.FirstOrDefault(x => x.KullaniciAdi == admin.KullaniciAdi && x.Sifre == admin.Sifre);
-            if (bilgiler != null)
-            {
-                
-            }
-            return View();
-        }
-    }
+		public ActionResult AdminLogin(Admin admin)
+		{
+			var bilgiler = c.Admins.FirstOrDefault(x => x.KullaniciAdi == admin.KullaniciAdi && x.Sifre == admin.Sifre);
+			if (bilgiler != null)
+			{
+
+			}
+			return View();
+		}
+	}
 }
     
