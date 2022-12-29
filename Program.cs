@@ -11,10 +11,9 @@ var connectionString = builder.Configuration.GetConnectionString("ApplicationDbC
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
@@ -34,10 +33,3 @@ app.MapControllerRoute(
     pattern: "{controller=AnaSayfa}/{action=Index}/{id?}");
 app.MapRazorPages();
 app.Run();
-//app.UseEndpoints(endpoints =>
-//{
-//	endpoints.MapControllerRoute(
-//	name: "Blog",
-//	pattern: "/Blog/{action=YorumYap}/{id?}",
-//	defaults: new { controller = "Blog" });
-//});

@@ -50,9 +50,12 @@
                 </ul>
             </div>
             <partial name="_LoginPartial" />
+         </div>
     </nav>
+    
     <!--Menü Bitiş-->
-    @RenderBody();
+    @RenderBody()
+    @await RenderSectionAsync("Scripts", required: false)
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - KisiselWebSayfasi - <a asp-area="" asp-controller="AnaSayfa" asp-action="Index">Privacy</a>
