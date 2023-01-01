@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using KisiselWebSayfasi.Areas.Identity.Data
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -20,8 +24,26 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="~/AnaSayfa/Index">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/AnaSayfa/Index/">Hakkımızda</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Sehrim/Index/">Şehrim</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Blog/Index/">Blog</a>
+                        </li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area=""  asp-controller="Index" asp-action="Index">Index</a>
+                             
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Index" asp-action="Admin">Index</a>
+                             
+                            </li>
+                        }
                     </ul>
                 </div>
                 <partial name="_LoginPartial" />

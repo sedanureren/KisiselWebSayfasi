@@ -1,6 +1,7 @@
-﻿@{
-    Layout = null;
-}
+﻿@using Microsoft.AspNetCore.Identity
+@using KisiselWebSayfasi.Areas.Identity.Data
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,17 +37,50 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Sehrim/Index/">Şehrim</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/Blog/Index/">Blog</a>
                     </li>
-                    <li class="nav-item">
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Yönetici
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="/User/Index/">Kullanıcı Rol Güncelleme</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    @*
+                     @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                    <a class="dropdown-item" href="/User/Index/">Kullanıcı Rol Güncelleme</a>
+                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area=""  asp-controller="Role" asp-action="Index">Roles</a>
+                             
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Role" asp-action="Admin">Admin</a>
+                             
+                            </li>
+                        }
+                    @*<li class="nav-item">
                         <a class="nav-link" href="/UserLogin/Login/">Oturum Aç</a>
 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Admin/AdminLogin/">Admin Giris</a>
 
-                    </li>
+                    </li>*@
                 </ul>
             </div>
             <partial name="_LoginPartial" />
@@ -63,3 +97,7 @@
     </footer>
 </body>
 </html>
+
+
+
+

@@ -8,6 +8,7 @@ namespace KisiselWebSayfasi.Controllers
     public class AdminController : Controller
     {
         Context c=new Context();
+
         public IActionResult Index()
         {
             var degerler = c.Bloglars.ToList();

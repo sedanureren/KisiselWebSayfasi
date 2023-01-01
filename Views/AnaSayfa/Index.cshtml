@@ -9,31 +9,104 @@
 <html lang="en">
 <body>
     <section class="p-5 text-center hakkimizda">
-
-           <h2 class="mb-5 font-weight-bold">Hakkımda</h2>
+        <div class="conteiner">
+            <h2 class="mb-5 font-weight-bold">Hakkımda</h2>
             <hr class="ayrac"><i class="far fa-star ibeyaz"></i>
-            <div class="center">
-                <div class="avatar">
-                    <img src="~/img/cicek.png">
-                </div>
-                <div class="content">
-                    @foreach (var x in Model)
-                    {
-                        <h1>@x.isim</h1>
-                        <h2>@x.unvan</h2>
-                        <p>@x.aciklama</p>
-                        <h3>@x.iletisim</h3>
-              
-                    }
+           
+            <div class="content">
+            @foreach (var x in Model)
+            {
+            <div class="row mb-3">
+                <div class="bg-arka">
+                    <div class="d-flex h-100 flex-column justify-content-center">
+                        
+                                <p class="text-break">Merhaba.Ben @x.isim .22/09/2002'de Elazığ'da doğdum. Annem Elazığlı babam ise Erzurumlu. 1 tane erkek kardeşim var. Sakarya Üniversitesinde @x.unvan yim.</p>
 
-                </div>
+                            
 
+                        </div>
+                    </div>
+                </div>
+            }
             </div>
-        <br><br>
-        <a href="ozgecmis.html">Özgeçmişime buradan ulaşabilirsiniz.</a>
+            
+            
+        </div>
 
-    </section>
+        <div class="row">
+            <div class="col-8 ">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <div class="content">
+                        @foreach (var y in Model)
+                        {
+                             <p class="text-break"> @y.aciklama</p>
+                
+                        }
 
+                    </div>
+                    </div>
+            </div>
+            <div class="col-4 order-first p=0">
+                <img class="img-fluid" src="./img/sahil.jpg">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-8 bg-arka">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p>İlkokulu Mustafa Kemal İlkokulunda okudum </p>
+                </div>
+            </div>
+            <div class="col-4 p=0">
+                <img class="img-fluid" src="./img/ilkokul.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 ">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p>Ortaokulu Darıca İmam Hatip ortaokulunda okudum.Ortaokulumun ilk mezunlarındandım.Okulumuz çok küçük ama çok güzel bir okuldu.Hayatımın en güzel yılları orda geçti diyebilirim.</p>
+                    <p>Liseyi Şehit Murat Tevlim İmam Hatip Lisesinde okudum.TEOG puanım okulun çok üstünde olmasına rağmen o zaman imam hatibe gitmek için bu okulu tercih ettim.Hala bu okula geldiğim için çok mutluyum çünkü çok iyi arkadaşlar edindim ve öğretmenlerimin hepsini çok seviyorum.</p>
+                </div>
+            </div>
+            <div class="col-4 order-first p=0">
+                <img class="img-fluid" src="./img/lise.jpg">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-8 bg-arka">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p>Şu an Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıfım.Hep kararsız bir insan olduğum için mesleğimi seçmek benim için çok zordu.Şu an bulunduğum yerden mutluyum okula gidebileceğimiz günler gelince daha mutlu olacağımdan eminim :)</p>
+                </div>
+            </div>
+            <div class="col-4 p=0">
+                <img class="img-fluid" src="./img/saü.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 ">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p>En büyük hobilerimden biri müzik dinlemektir. Yeni çıkan şarkıları takip etmeyi çok seviyorum.</p>
+                    <p>Ve en büyük hayallerimden biri ilerde piyano çalabilmek.Henüz böyle bir hobi edinmek için gerekli zamanı ve şartları sağlayamadım ama umarım ilerde sağlayabilirim.</p>
+                </div>
+            </div>
+            <div class="col-4 order-first p=0 row">
+                <iframe src="https://www.youtube.com/embed/k_kWWlVClNM" width="400" height="300" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-8 bg-arka">
+                <div class="d-flex h-100 flex-column justify-content-center">
+                    <p>Tatlı yapmayı çok seviyorum.Bu hobim lisede çok güzel bir <a href="https://www.damyskitchen.com/2017/10/en-iyi-islak-kek.html">ıslak kek</a> yapıp herkesin onu beğenmesiyle başaladı o günden beri mutfakta vakit geçirmeyi seviyorum</p>
+                    <p>Üniversite sınavı bittiğinden beri hep izlemek istediğim ama vakit ayıramadığım dizi ve filmleri izlemeye başladım ve özellikle mini dizi izlemenin beni çok eğlendirdiğini farkettim.</p>
+                </div>
+            </div>
+            <div class="col-4 p=0">
+                <img class="img-fluid" src="./img/dizi.jpg">
+            </div>
+        </div>
+        </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
     <!--hakkımızda bitiş-->

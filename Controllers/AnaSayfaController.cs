@@ -13,12 +13,5 @@ namespace KisiselWebSayfasi.Controllers
 
             return View(deger);
         }
-        public PartialViewResult Ikonlar()
-        {
-            var deger=c.Ikonlars.ToList();
-            return PartialView(deger);
-
-
-        }
     }
 }

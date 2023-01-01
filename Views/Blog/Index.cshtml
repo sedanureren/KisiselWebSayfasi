@@ -38,8 +38,9 @@
 					<img src="@x.BlogImage" alt="" style="margin-bottom:20px" />
 					<a href="/Blog/BlogDetay/@x.Id" >@x.Baslik</a>
 					<p>
-						@x.Aciklama
+						@x.Aciklama.Substring(0,100)
 					</p>
+					<p><a href ="/Blog/BlogDetay/@x.Id"><span class="read">Devamını Oku></span></a></p>
 					</div>
 					<br /><br />
 				}
@@ -55,11 +56,12 @@
 				</div>
                <div class="comments">
 					<h3>SON YORUMLAR</h3>
-					<ul>
-						<li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
-						<li><a href="#">Peter Doe </a> on <a href="#"> Photography</a></li>
-						<li><a href="#">Steve Roberts  </a> on <a href="#">HTML5/CSS3</a></li>
-					</ul>
+					@foreach (var y in Model.Deger4)
+					{
+						<ul>
+							<li><a href="/Blog/BlogDetay/@y.Id">@y.KullaniciAdi ->(@y.Yorum )</a></li>
+						</ul>
+					}
 				</div>
 			</div>
 			<div class="clearfix"></div>

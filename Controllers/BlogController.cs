@@ -15,6 +15,7 @@ namespace KisiselWebSayfasi.Controllers
             // var bloglar = c.Bloglars.ToList();
             blogYorum.Deger1 = c.Bloglars.ToList();
 			blogYorum.Deger3 = c.Bloglars.OrderByDescending(x => x.Id).Take(3).ToList();
+			blogYorum.Deger4 = c.Yorumlars.OrderByDescending(x => x.Id).Take(3).ToList();
 
 			return View(blogYorum);
         }

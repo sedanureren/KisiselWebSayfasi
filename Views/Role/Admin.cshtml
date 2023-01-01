@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using KisiselWebSayfasi.Models.Siniflar
+@model List<Blog>
+
+<h2>Blog Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <td>ID</td>
+        <td>BAŞLIK</td>
+        <td>Tarih</td>
+
+        <td>SİL</td>
+        <td>GÜNCELLE</td>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.Baslik</td>
+            <td>@x.Tarih</td>
+            <td><a href="/Admin/BlogSil/@x.Id" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Admin/BlogGetir/@x.Id" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="#" class="btn btn-default">Detaylar</a></td>
+        </tr>
+    }
+</table>
+
+<a href="/Admin/YeniBlog" class="btn btn-primary">Yeni Blog</a>
